@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" class="antialiased">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio</title>
+
+  <!-- Inter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN (for assignment use; okay via CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Meta -->
+  <meta name="description" content="Personal portfolio showcasing profile, skills, projects and contact.">
+</head>
+<body class="bg-white text-gray-800 font-inter transition-colors duration-300">
+  <header class="bg-white/60 backdrop-blur sticky top-0 z-30 border-b">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="text-xl font-semibold">Portfolio</a>
+
+      <nav class="space-x-4">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="projects.html" class="hover:underline">Projects</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+        <a href="CV.pdf" download class="ml-2 inline-block px-3 py-1 text-sm border rounded hover:shadow-sm transition">Resume</a>
+        <!-- Dark mode toggle -->
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-10">
+    <!-- Hero -->
+    <section class="grid gap-8 lg:grid-cols-3 items-center">
+      <div class="lg:col-span-2">
+        <h1 class="text-3xl md:text-4xl font-bold mb-2">Hi, I'm Shashwat Rai</h1>
+        <p class="text-gray-600 mb-4">B.Tech (AI) • Content creator • Interested in AI, web development, and product design.</p>
+
+        <p class="mb-4">Quick highlights:</p>
+        <ul class="list-disc pl-5 text-gray-700">
+          <li>Beginner-friendly AI projects</li>
+          <li>Responsive multi-page site</li>
+          <li>Accessible contact form with validation</li>
+        </ul>
+
+        <a href="projects.html" class="inline-block mt-6 px-6 py-2 border rounded hover:translate-y-[-2px] transition-transform">View Projects</a>
+        <a href="CV.pdf" class="inline-block mt-6 ml-3 px-6 py-2 bg-blue-600 text-white rounded hover:opacity-95 transition" download>Download CV</a>
+      </div>
+
+      <!-- Photo placeholder -->
+      <aside class="flex justify-center lg:justify-end">
+        <div class="w-48 h-48 bg-gray-100 border rounded-lg flex items-center justify-center overflow-hidden">
+            <img src="Profile.jpg" alt="Shashwat Rai" class="w-full h-full object-cover">
+          
+        </div>
+      </aside>
+    </section>
+
+    <!-- Skills & Tools -->
+    <section class="mt-12 grid gap-8 md:grid-cols-2">
+      <article>
+        <h2 class="text-2xl font-semibold mb-3">Skills</h2>
+        <ol class="list-decimal ml-5 text-gray-700">
+          <li>HTML & Semantic markup</li>
+          <li>CSS & Tailwind CSS</li>
+          <li>JavaScript (frontend)</li>
+          <li>Basic Machine Learning concepts</li>
+        </ol>
+      </article>
+
+      <aside>
+        <h2 class="text-2xl font-semibold mb-3">Tools</h2>
+        <ul class="list-disc ml-5 text-gray-700">
+          <li>VS Code</li>
+          <li>Git & GitHub</li>
+          <li>Figma (basic)</li>
+          <li>Python (NumPy, Pandas basics)</li>
+        </ul>
+      </aside>
+    </section>
+
+
+    <!-- Small footer -->
+    <footer class="mt-12 border-t pt-6 text-sm text-gray-600">
+      <p>thank you</p>
+    </footer>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
