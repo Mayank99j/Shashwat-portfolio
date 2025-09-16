@@ -1,0 +1,31 @@
+/* styles.css - minimal custom styles */
+:root {
+  --accent: #2563eb; /* blue-600 */
+  --muted: #6b7280;
+}
+
+/* Use Inter */
+.font-inter { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+
+/* small rounded buttons */
+button { cursor: pointer; }
+
+/* Photo placeholder styling handled inline in HTML */
+
+/* Hover tiny lift effect for links/buttons */
+a:hover, button:hover { transform: translateY(-2px); transition: transform .18s ease; }
+
+/* Focus outline improvement */
+:focus { outline: none; box-shadow: 0 0 0 3px rgba(37,99,235,0.15); border-radius: 6px; }
+
+/* Dark mode adjustments (activated by the JS toggling 'dark' class on <html>) */
+html.dark body {
+  background: #0f172a; /* slate-900 */
+  color: #e6eef8;
+}
+html.dark header, html.dark footer {
+  background: rgba(2,6,23,0.6);
+  border-color: rgba(255,255,255,0.06);
+}
+html.dark a { color: #93c5fd; }
+html.dark .border { border-color: rgba(255,255,255,0.06); }
